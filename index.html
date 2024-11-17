@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+ 
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ 
+ <meta name="apple-mobile-web-app-status-bar-style" content="black">
+ 
+ <meta name="format-detection" content="telephone=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<h1>IP查询工具</h1>
+<br>
+<h3 style="color: red;">本工具可查询 IP数据、各个网站连通性、IP纯净度</h3>
+<br>
+<h2>---IP地址查询器---<h2>
+<h4>注：下滑可查看更多<h4>
+<h5>首次加载可能较慢，请耐心等待！如果无法访问请关闭广告拦截器再试<h5>
+<h3>↓↓↓↓↓↓↓↓↓↓<h3>
+<iframe src="https://ip.skk.moe/simple-dark" style="width: 100%; border: 0"></iframe>
+<h3>↑↑↑↑↑↑↑↑↑↑<h3>
+<br>
+<script>
+        function ip() {
+            var input = document.getElementById("ipInput").value;
+            var url = "https://scamalytics.com/ip/" + encodeURIComponent(input);
+            window.location.href = url;
+        }
+    </script>
+    <script>
+        function ip() {
+            var input = document.getElementById("ipInput").value;
+            var url = "https://ping0.cc/ip/" + encodeURIComponent(input);
+            window.location.href = url;
+        }
+    </script>
+    <script>
+        function tcping() {
+            var input = document.getElementById("ipInput").value;
+            var url = "https://www.itdog.cn/tcping/" + encodeURIComponent(input);
+            window.location.href = url;
+        }
+    </script>
+    <script>
+        function fanyi() {
+            var input = document.getElementById("ipInput").value;
+            var url = "https://imgapi.cn/qq.php?qq=" + encodeURIComponent(input);
+            window.location.href = url;
+        }
+    </script>
+<h2>---IP数据查询---<h2>
+<h3>IPv4：<h3>
+<br>
+<iframe src="https://ping0.cc/geo" style="width: 100%; border: 0"></iframe>
+<h3>IPv6：（不显示代表没有）<h3>
+<iframe src="https://ipv6.ping0.cc/geo" style="width: 100%; border: 0"></iframe>
+</head>
+<body>
+    <h2>---IP属地&纯净度查询---<h2> 
+    <input type="text" id="ip" placeholder="输入IP地址" required>
+    <button onclick="ip()">查询</button>
+    <h4>例：8.8.8.8<h4>
+    <h4>注：查询完后，分越低明IP越纯净。<br><br>
+    15 以内为极度纯净IP, 显示为深绿色 。<br>
+15 - 25 为纯净IP, 显示为绿色 。<br>
+25 - 40 为一般IP, 显示为黄绿色 。<br>
+40 - 50 为微风险IP, 显示为黄色 。<br>
+50 - 70 为一般风险IP, 显赫为橙色 。<br>
+70 以上为极度风险IP显示为红色, 可直接拉黑 。<br>
+<h2>秋名山导航：qmsdh.com</h2>
+</html>
